@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Josefin sans", Quicksand, Helvetica;
+    color: rgb(62, 60, 60);
+    text-decoration: none;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+}
+#header-img {
+    max-width: 5vw;
+}
+#nav-bar {
+    position: fixed;
+    align-self: flex-end;
+}
+video{
+    max-width: 560px;
+    max-height: 315px;
+}
+
+@media screen and (min-width: 480px) {
+    body {
+      background-color: lightgreen;
+    }
+  }
