@@ -4,23 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 <body>
     <header id="header">
-        <img id="header-img" src="https://www.pngall.com/wp-content/uploads/14/Y2k-Star-PNG-Picture.png" loading="eager">
+        <img id="header-img" src="https://www.pngall.com/wp-content/uploads/14/Y2k-Star-PNG-Picture.png" loading="lazy">
         <nav id="nav-bar">
-            <a class="nav-link" href="#">Link</a>
-            <a class="nav-link" href="#">Link</a>
-            <a class="nav-link" href="#">Link</a>
+            <ul>
+                <li>
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#video">Eggdog Kart 2022</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#signUp">Sign up</a>
+                </li>
+            </ul>
         </nav>
     </header>
-    <iframe id="video" src="https://www.youtube.com/embed/B3GsgpkuhdY?si=8OJTL56lMDeS_yB9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    <form id="form" action="https://www.freecodecamp.com/email-submit">
-        <input id="email" name="email" type="email" placeholder="Enter your email..." required>
-        <input id="submit" value="submit" type="submit">
-    </form>
+    <section id="about">
+        <h1>Annual eggdog race</h1>
+        <ul id="signUp">
+            <li>It's time to enter your Eggdog in Eggdog Kart 2023!</li>
+            <li>Race commences <span style="font-weight: 400;">August 20th 2023</span></li>
+            <li id="li3">Sign up is easy!</li>
+                <ul id="howTo">
+                    <li>1. Enter your email in the slot below</li>
+                    <li>2. Fill out the entry form you recieve in an email from us</li>
+                    <li>3. Recieve an entry confirmation email</li>
+                </ul>
+        </ul>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <input id="email" name="email" type="email" placeholder="Enter your email..." required>
+            <input id="submit" value="Let's go!" type="submit">
+        </form>
+    </section>
+    <section id="container">
+        <h2>Eggdog Kart - 2022</h2>
+        <div id="video">
+            <iframe id="video" src="https://www.youtube.com/embed/B3GsgpkuhdY?si=8OJTL56lMDeS_yB9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </section>
+    <section id="options">
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+    </section>
+    <footer>
+        <p>Check out the mind behind <a target="_blank" href="https://www.instagram.com/zamsire/">EGGDOG</a></p>
+        <p>Mock website. For project purposes only.</p>
+    </footer>
 </body>
 </html>
