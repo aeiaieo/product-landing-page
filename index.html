@@ -6,56 +6,83 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>fruity farms</title>
 </head>
 <body>
-    <header id="header">
-        <img id="header-img" src="https://www.pngall.com/wp-content/uploads/14/Y2k-Star-PNG-Picture.png" loading="lazy">
-        <nav id="nav-bar">
-            <ul>
-                <li>
-                    <a class="nav-link" href="#about">About</a>
-                </li>
-                <li>
-                    <a class="nav-link" href="#video">Eggdog Kart 2022</a>
-                </li>
-                <li>
-                    <a class="nav-link" href="#signUp">Sign up</a>
-                </li>
+    <header id="header"><nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="Free-strawberry-clipart.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#info">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#video">How to</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#options">Our selection</a>
+              </li>
             </ul>
-        </nav>
+          </div>
+        </div>
+      </nav>
     </header>
-    <section id="about">
-        <h1>Annual eggdog race</h1>
-        <ul id="signUp">
-            <li>It's time to enter your Eggdog in Eggdog Kart 2023!</li>
-            <li>Race commences <span style="font-weight: 400;">August 20th 2023</span></li>
-            <li id="li3">Sign up is easy!</li>
+    <section id="info">
+        <h1>Welcome!</h1>
+        <ul id="about" class="container-fluid">
+            <li>We are a fruit farm located in Puyallup, WA that specializes in strawberries. We are open to the public for strawberry picking and our annual summer strawberry picking fest.<br>
+                Get your <em>free entry tickets</em> below!</li>
+            <li class="li-title">Season starts <span style="font-weight: 400;">June 14th 2023</span></li>
+            <li id="li3">Get your free tickets for our annual strawberry festival!</li>
                 <ul id="howTo">
                     <li>1. Enter your email in the slot below</li>
                     <li>2. Fill out the entry form you recieve in an email from us</li>
-                    <li>3. Recieve an entry confirmation email</li>
+                    <li>3. Recieve an email with your tickets!</li>
                 </ul>
         </ul>
-        <form id="form" action="https://www.freecodecamp.com/email-submit">
-            <input id="email" name="email" type="email" placeholder="Enter your email..." required>
-            <input id="submit" value="Let's go!" type="submit">
-        </form>
+        <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
     </section>
     <section id="container">
-        <h2>Eggdog Kart - 2022</h2>
+        <h2>How to pick your berries</h2>
         <div id="video">
-            <iframe id="video" src="https://www.youtube.com/embed/B3GsgpkuhdY?si=8OJTL56lMDeS_yB9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/0Zoew-b90y8?si=1bcpds9aQa7SSQxR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
     </section>
+    <h3>Choose from a selection of berries!</h3>
     <section id="options">
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
+        <div class="card" style="width: 18rem;">
+            <img src="photo-1678183134421-0d618164db7f.avif" class="card-img-top" alt="pineberry">
+            <div class="card-body">
+              <p class="card-text">Pineberry</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="photo-1594313016474-4a0b1b36b6d6.avif" class="card-img-top" alt="strasberry">
+            <div class="card-body">
+              <p class="card-text">Strasberry</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="photo-1519180392711-496e450edf6a.avif" class="card-img-top" alt="strawberry" height="190.66">
+            <div class="card-body">
+              <p class="card-text">Senga Sengana (aka: Strawberry)</p>
+            </div>
+          </div>
     </section>
     <footer>
-        <p>Check out the mind behind <a target="_blank" href="https://www.instagram.com/zamsire/">EGGDOG</a></p>
+        <p><a target="_blank" href="https://aeiaieo.com">AEIAIEO</a></p>
         <p>Mock website. For project purposes only.</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>

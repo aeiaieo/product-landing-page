@@ -3,13 +3,11 @@
     padding: 0;
     font-family: "Josefin sans", Quicksand, Helvetica;
     color: rgb(62, 60, 60);
-    text-decoration: none;
+    text-decoration: none !important;
     list-style: none;
-    box-sizing: border-box;
-    
 }
 body {
-    background-image: linear-gradient(140deg, #EADEDB 0%, #BC70A4 50%, #7541d6 75%);
+    background-image: linear-gradient(140deg, #EADEDB 0%, #f0addb 50%, #d64146 75%);
 }
 #container {
     display: flex; 
@@ -18,61 +16,36 @@ body {
     align-items: center; 
     height: 60vh;
 }
-header {
-    position: fixed;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    align-items: center;
-    width: 100%;
-    top: 0;
-}
-#header-img {
-    max-width: 5vw;
-}
-li {
-    display: inline;
-    margin-right: 10px;
-    font-weight: 300;
-}
-#li3 {
-    margin-top: 30px;
-}
 #about {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    text-align: center;
-    height: 200px;
-    margin-top: 200px;
+    align-items: center;
+    width: 75%;
 }
-#signUp {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 30px;
-    margin-left: 100px;
+.navbar-nav {
+    margin-top: 10px;
 }
-#signUp ul {
-    margin: 10px;
-}
-#signUp li{
-    font-size: 20px;
-}
-#form {
-    margin: 40px;
-    align-self: center;
-}
-input {
-    font-size: 30px;
-    padding: 3px;
+form {
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-top: 40px;
 }
 h1 {
     font-weight: 400;
     font-size: 40px;
-    text-transform: uppercase;
     margin-left: 75px;
+    padding-top: 40px;
+}
+h3 {
+    margin-left: 75px;
+}
+.li-title {
+    font-size: 30px !important;
+    margin-bottom: 20px;
+}
+button {
+    background-color: #d64146 !important;
+    border: none !important;
 }
 iframe {
     margin: 20px;
@@ -82,20 +55,33 @@ iframe {
 footer {
     margin: 10px;
     width: 100%;
-    position: fixed;
     bottom: 0;
 }
-p {
+footer p {
     position: fixed;
     display: inline;
     position: relative;
 }
+footer a{
+    color: white;
+}
 #options {
     width: 100%;
-    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 100px;
+    margin-top: 50px;
 }
-@media screen and (max-width: 680px) {
-    body {
-      background-color: pink;
+@media screen and (max-width: 875px) {
+    #options {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        margin-bottom: 10px;
+    }
+    form {
+        margin: 40px;
     }
   }
