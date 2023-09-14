@@ -9,6 +9,14 @@
 body {
     background-image: linear-gradient(140deg, #EADEDB 0%, #f0addb 50%, #d64146 75%);
 }
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+#info {
+    margin-top: 40px;
+}
 #container {
     display: flex; 
     flex-direction: column;
